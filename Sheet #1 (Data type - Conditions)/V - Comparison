@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    int A, B;
+    char S;
+    cin >> A >> S >> B;
+    bool ok = false;
+
+    if (S == '=')
+        ok = A == B;
+    else if (S=='<')
+        ok = A < B;
+    else 
+        ok = A > B;
+    if (ok)
+        cout << "Right";
+    else
+        cout << "Wrong";
+
+    return 0;
+}
