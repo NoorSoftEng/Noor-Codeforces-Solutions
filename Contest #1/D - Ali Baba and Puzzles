@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+long long a, b, c, d;
+cin >> a >> b >> c >> d;
+
+bool ok = false;
+
+if (a + b - c == d) ok = true;
+if (a + b * c == d) ok = true;
+if (a - b + c == d) ok = true;
+if (a - b * c == d) ok = true;
+if (a * b + c == d) ok = true;
+if (a * b - c == d) ok = true;
+
+if (ok) 
+  cout << "YES";
+else
+  cout << "NO";
+
+return 0;
+
+}
