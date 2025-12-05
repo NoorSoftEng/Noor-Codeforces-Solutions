@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    string n;
+    cin >> n;
+
+    int pos = n.find('.');
+    if (pos == -1)
+        cout << "int " << n;
+    else{
+        if (stoi(n.substr(pos+1)) == 0)
+            cout << "int " << n.substr(0, pos);
+        else 
+            cout << "float "<<n.substr(0, pos)<<" "<<"0"<<n.substr(pos);
+
+    }
+    return 0;
+}
