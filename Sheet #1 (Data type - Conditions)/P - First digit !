@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+    int A;
+    cin>>A;
+
+    string x=to_string(A).substr(0,1);
+    if(stoi(x)%2 ==0)
+    cout<<"EVEN";
+    else 
+    cout<<"ODD";
+
+return 0;
+}
