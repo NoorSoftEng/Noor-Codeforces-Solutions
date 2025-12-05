@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int A, B,C;
+    char S,Q;
+    cin >> A >> S >> B>>Q>>C;
+    bool ok = false;
+
+    if (S == '+')
+        ok = (A+B==C);
+    else if (S=='-')
+        ok = (A - B==C);
+    else 
+        ok = (A*B==C);
+    if (ok)
+        cout << "Yes";
+    else {
+    if (S == '+')
+        cout << A + B;
+    else if (S == '-')
+        cout << A - B;
+    else
+        cout << A * B;
+}
+
+
+    return 0;
+}
