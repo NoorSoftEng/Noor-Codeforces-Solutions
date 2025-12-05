@@ -1,0 +1,9 @@
+using namespace std;
+#include <iostream>
+int main()
+{
+    string S;
+    cin>> S;
+    cout << "Hello, " << S;
+    return 0;
+}
