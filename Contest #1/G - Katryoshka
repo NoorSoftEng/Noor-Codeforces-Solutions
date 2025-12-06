@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+    long long n, m, k;
+    cin >> n >> m >> k;
+
+    long long ans = k;          
+    if (n < ans)                
+        ans = n;
+
+    long long pairs = (n + m) / 2;  
+
+    if (pairs < ans)          
+        ans = pairs;
+
+    cout << ans;
+    return 0;
+}
