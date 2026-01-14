@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int p;
+    cin >> p;
+
+    bool isPrime = true;
+    if (p >=2){
+        for (int i = 2; i < p; i++){
+            if (p % i == 0){
+                isPrime = false;
+                break;}
+        }
+    }
+    else
+        isPrime = false;
+    
+    if (isPrime)
+        cout << "YES";
+    else
+        cout << "NO";
+
+    return 0;
+}
