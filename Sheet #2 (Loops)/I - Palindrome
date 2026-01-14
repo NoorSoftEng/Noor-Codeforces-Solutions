@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+int main() {
+    int n;
+    cin >> n;
+
+    string x = to_string(n);
+    string rvx =x;
+
+    reverse(rvx.begin(), rvx.end());
+    cout << stoi(rvx)<<endl;
+
+    if (x == rvx)
+        cout << "YES";
+    else
+        cout << "NO";
+
+    return 0;
+}
