@@ -1,0 +1,25 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    for (int i = 1; i <= T; i++){
+        int X, Y;
+        cin >> X >> Y;
+        
+        int num_max = max(X, Y);
+        int num_min = min(X, Y);
+        int sum =0;
+        
+        for (int j = num_min +1; j < num_max; j++){;
+            if (j %2 !=0)
+                sum += j;
+        }
+        cout << sum <<endl;
+    }
+        return 0;
+}
