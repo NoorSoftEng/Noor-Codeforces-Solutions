@@ -1,0 +1,23 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    int N,M;
+    while (cin >> N >>M)
+    {
+        if (N <= 0 || M <= 0)
+            break;
+        
+        int num_max = max(N, M);
+        int num_min = min(N, M);
+        int sum = 0;
+
+        for (int i = num_min; i <= num_max; i++){
+            cout << i << " ";
+            sum += i;
+        }
+        cout << "sum =" << sum << endl;
+    }
+    return 0;
+}
